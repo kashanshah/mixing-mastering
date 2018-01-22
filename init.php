@@ -350,11 +350,11 @@ function my_plugin_enable_ajax() {
 				parentDiv.find('.upload-track-div .upload-track-file:not(#upload-track-1)').each(function(){
 					jQuery(this).find('a[onclick="removeTrackCounter(this);"]').click();
 				});
-				parentDiv.find('.add-more-btn-div').slideUp();
+				// parentDiv.find('.add-more-btn-div').slideUp();
 				updateSongCount(".upload-track-div", "");
 			}
 			else{
-				parentDiv.find('.add-more-btn-div').slideDown();
+				// parentDiv.find('.add-more-btn-div').slideDown();
 			}
 			parentDiv.find('input[name="songPrice-'+SongSNo+'"]').val(addMasteringTypePrice);
 		}
@@ -433,7 +433,7 @@ function my_plugin_enable_ajax() {
 	function removeTrackCounter(thiss){
 		var parentDiv = jQuery(thiss).closest(".services-add-remove");
 		addMoreTrackCounter--;
-		jQuery(".add-more-btn-div").slideDown();
+		// jQuery(".add-more-btn-div").slideDown();
 		parentDiv.find(".TotalPrice").val(parseInt(parentDiv.find(".TotalPrice").val()) - 10)
 		jQuery(thiss).closest(".upload-track-file").remove();
 		updateEverything();
@@ -449,7 +449,7 @@ function my_plugin_enable_ajax() {
 			parentDiv.find(".upload-track-div").append('<div class="row upload-track-file" id="upload-track-'+trackCounter+'"><div class="col-md-3"><label>UPLOAD TRACK <strong class="song-count">'+addMoreTrackCounter+'</strong>: *</label></div><div class="col-md-9"><div class="row"><div class="col-md-8"><div class="input-file-div"><input type="file" name="ProjectFile-'+parentDiv.find('input[name="TotalPackages[]"]').val()+'[]" id="MasteringTrack-'+parentDiv.find('input[name="TotalPackages[]"]').val()+'-'+trackCounter+'" class="inputfile" data-multiple-caption="{count} files selected" multiple accept=".rar,.zip" required="" /><label for="MasteringTrack-'+parentDiv.find('input[name="TotalPackages[]"]').val()+'-'+trackCounter+'"><span>&nbsp;</span> <strong> BROWSE</strong></label><a href="javascript:;" onclick="removeTrackCounter(this);"><i class="fa fa-times"></i></a></div></div></div></div></div>');
 		}
 		if(addMoreTrackCounter > 12 || addMoreTrackCounter == 12){
-			jQuery(".add-more-btn-div").slideUp();
+			// jQuery(".add-more-btn-div").slideUp();
 		}
 		updateEverything();
 		trackCounter++;

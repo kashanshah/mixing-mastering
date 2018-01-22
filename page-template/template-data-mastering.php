@@ -105,15 +105,15 @@ $SNo = (isset($_REQUEST["SNo"]) ? $_REQUEST["SNo"] : "01");
 																			<label for="radio-button-<?php echo $SNo; ?>">STEREO MASTERING ($50)</label>
 																		</div>
 																		<div class="radio-button">
-																			<input type="radio" required="" name="MasteringType-<?php echo $SNo; ?>" class="mastering-type" id="radio-button-2-<?php echo $SNo; ?>" value="Stem (100)" data-price="100" />
+																			<input type="radio" required="" name="MasteringType-<?php echo $SNo; ?>" class="mastering-type" id="radio-button-2-<?php echo $SNo; ?>" value="Stem (150)" data-price="150" />
 																			<label class="check-btn-label" for="radio-button-2-<?php echo $SNo; ?>"></label>
-																			<label for="radio-button-2-<?php echo $SNo; ?>">STEM MASTERING ($100)</label>
+																			<label for="radio-button-2-<?php echo $SNo; ?>">STEM MASTERING ($150)</label>
 																		</div>
 																	</div>
 																</div>
 																<div class="row">
 																	<div class="col-md-12 text-center">
-																		<p>Break down your mix into up to 4 important stems/tracks (for example, vocals and instrumental, or vocals, drums, bass, and chords.) </p>
+																		<p>For Stereo Mastering - upload a zip file (or .rar) of your single .wav file mixdown with at least 3 db of headroom. (make sure the loudest part of your mix doesn’t go over -3db in volume). For Stem Mastering - upload a zip (or .rar) file with up to 12 stems of your mixdown and at least 3 db of headroom.</p>
 																	</div>
 																</div>
 																<div class="upload-track-div">
