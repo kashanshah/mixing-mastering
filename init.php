@@ -362,8 +362,36 @@ function my_plugin_enable_ajax() {
 		if(parentDiv.find('input[name="ServiceName[]"]').val() == "Complete Package"){
 			addOrNot = addOrNot;
 		}
-		if(Val >= 1 && Val <= 10){
-			jQuery('label[for="'+KeyOfStem+'"] .currently').text("You are currently in 01-10 tracks rates of $119");
+		if(Val >= 1 && Val <= 3){
+			jQuery('label[for="'+KeyOfStem+'"] .currently').text("You are currently in 01-03 tracks rates of $50");
+			jQuery(this).closest(".services-add-remove").find('input[name="songPrice-'+SongSNo+'"]').val(50 + addOrNot);
+		}
+		else if(Val == 4){
+			jQuery('label[for="'+KeyOfStem+'"] .currently').text("You are currently in 04 tracks rates of $60");
+			jQuery(this).closest(".services-add-remove").find('input[name="songPrice-'+SongSNo+'"]').val(60 + addOrNot);
+		}
+		else if(Val == 5){
+			jQuery('label[for="'+KeyOfStem+'"] .currently').text("You are currently in 05 tracks rates of $70");
+			jQuery(this).closest(".services-add-remove").find('input[name="songPrice-'+SongSNo+'"]').val(70 + addOrNot);
+		}
+		else if(Val == 6){
+			jQuery('label[for="'+KeyOfStem+'"] .currently').text("You are currently in 06 tracks rates of $80");
+			jQuery(this).closest(".services-add-remove").find('input[name="songPrice-'+SongSNo+'"]').val(80 + addOrNot);
+		}
+		else if(Val == 7){
+			jQuery('label[for="'+KeyOfStem+'"] .currently').text("You are currently in 07 tracks rates of $90");
+			jQuery(this).closest(".services-add-remove").find('input[name="songPrice-'+SongSNo+'"]').val(90 + addOrNot);
+		}
+		else if(Val == 8){
+			jQuery('label[for="'+KeyOfStem+'"] .currently').text("You are currently in 08 tracks rates of $100");
+			jQuery(this).closest(".services-add-remove").find('input[name="songPrice-'+SongSNo+'"]').val(100 + addOrNot);
+		}
+		else if(Val == 9){
+			jQuery('label[for="'+KeyOfStem+'"] .currently').text("You are currently in 09 tracks rates of $110");
+			jQuery(this).closest(".services-add-remove").find('input[name="songPrice-'+SongSNo+'"]').val(110 + addOrNot);
+		}
+		else if(Val == 10){
+			jQuery('label[for="'+KeyOfStem+'"] .currently').text("You are currently in 10 tracks rates of $119");
 			jQuery(this).closest(".services-add-remove").find('input[name="songPrice-'+SongSNo+'"]').val(119 + addOrNot);
 		}
 		else if(Val >= 11 && Val <= 20){

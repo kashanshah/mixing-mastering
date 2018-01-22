@@ -22,7 +22,7 @@ $SNo = (isset($_REQUEST["SNo"]) ? $_REQUEST["SNo"] : "01");
 																			<input type="hidden" name="TotalPackages[]" value="<?php echo $SNo; ?>" />
 																			<input type="hidden" name="ServiceName[]" value="Mixing" />
 																			<input type="hidden" name="ServiceName-<?php echo $SNo; ?>" value="Mixing" />
-																			<input type="hidden" class="TotalPrice" name="songPrice-<?php echo $SNo; ?>" value="119"/>
+																			<input type="hidden" class="TotalPrice" name="songPrice-<?php echo $SNo; ?>" value="50"/>
 																		</h2>
 																	</div>
 																	<div class="col-md-9 text-right">
@@ -57,7 +57,7 @@ $SNo = (isset($_REQUEST["SNo"]) ? $_REQUEST["SNo"] : "01");
 																		</select>
 																	</div>
 																	<div class="col-md-5">
-																		<label for="NoOfStem-<?php echo $SNo; ?>" class="info-label"><i class="fa fa-info-circle"></i>PRICE RANGE:<span class="currently">You are currently in 01-10 tracks rates of $119</span></label>
+																		<label for="NoOfStem-<?php echo $SNo; ?>" class="info-label"><i class="fa fa-info-circle"></i>PRICE RANGE:<span class="currently">You are currently in 01-03 tracks rates of $50</span></label>
 																	</div>
 																</div>
 																<div class="row">
