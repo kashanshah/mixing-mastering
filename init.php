@@ -486,6 +486,7 @@ require_once(ROOTDIR . 'plugin-settings.php');
 
 
 add_action( 'wp_ajax_payViaPaypal', 'payViaPaypal' );
+add_action( 'wp_ajax_nopriv_payViaPaypal', 'payViaPaypal' );
 function payViaPaypal() {
 	global $wpdb; // this is how you get access to the database
 	global $con;
@@ -510,6 +511,7 @@ function dbinput($str){
 }
 
 add_action( 'wp_ajax_mixing_mastering_submit', 'mixing_mastering_submit' );
+add_action( 'wp_ajax_nopriv_mixing_mastering_submit', 'mixing_mastering_submit' );
 function mixing_mastering_submit() {
 	global $wpdb; // this is how you get access to the database
 	global $con;
